@@ -280,7 +280,7 @@ body {
   margin-bottom: 50px;
 }
 
-.services-container__service > p > span {
+.services-container__service > p > a {
   color: #e2651d;
   font-weight: 600;
 }
@@ -452,6 +452,7 @@ body {
 
 .review-stars {
   margin-bottom: 20px;
+  font-size: 0;
 }
 
 .review {

@@ -13,48 +13,45 @@
       name="keywords"
       content="electrician, local electrician, electrical services, residential electrician, commercial electrician, emergency electrician, electrical repairs, electrical installation, nuneaton, warwickshire, domestic, commercial, industrial, eicr"
     />
-    <meta name="author" content="Local Electrician Services" />
+    <meta name="author" content="DK Electrical" />
+    <meta name="robots" content="index, follow" />
+    <!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> -->
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://dkelectrical.com/" />
+    <link rel="canonical" href="https://www.dk-electrical.com/" />
 
     <!-- Structured Data (Schema.org) -->
-    <!-- <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "Electrician",
         "name": "DK Electricals",
-        "image": "images/dk-share-image.jpg",
-        "telephone": "+44 xxxxxxxx",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "123 Main Street",
-          "addressLocality": "Nuneaton",
-          "addressRegion": "Warwickshire",
-          "postalCode": "xxxx xxx",
-          "addressCountry": "GB"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 52.5167,
-          "longitude": -1.5
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "08:00",
-          "closes": "17:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/dkelectricals",
-          "https://www.instagram.com/dkelectricals"
+        "image": "https://www.dk-electrical.com/images/dk-share-image.jpg",
+        "telephone": "+447928896643",
+        "url": "https://www.dk-electrical.com/",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Nuneaton"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Warwickshire"
+          }
         ]
       }
-    </script> -->
+    </script>
+    <!-- ADD LATER WHEN SOCIALS HAVE BEEN CREATED -->
+    <!--  
+        "sameAs": [
+          "https://www.facebook.com/dk-electrical",
+          "https://www.instagram.com/dk-electrical"
+        ]
+    -->
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dkelectrical.com/" />
+    <meta property="og:url" content="https://www.dk-electrical.com/" />
     <meta
       property="og:title"
       content="DK Electricals | Trusted Electrical Services in Warwickshire"
@@ -65,13 +62,13 @@
     />
     <meta
       property="og:image"
-      content="https://lloydsibson.github.io/dkelectric/images/dk-share-image.jpg"
+      content="https://www.dk-electrical.com/images/dk-share-image.jpg"
     />
     <meta property="og:image:alt" content="Professional electrician services" />
 
     <meta
       property="og:logo"
-      content="https://lloydsibson.github.io/dkelectric/favicon/web-app-manifest-512x512.png"
+      content="https://www.dk-electrical.com/favicon/web-app-manifest-512x512.png"
     />
 
     <meta property="og:locale" content="en_GB" />
@@ -79,7 +76,7 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://dkelectrical.com/" />
+    <meta property="twitter:url" content="https://www.dk-electrical.com/" />
     <meta
       property="twitter:title"
       content="DK Electricals | Trusted Electrical Services in Warwickshire"
@@ -90,7 +87,7 @@
     />
     <meta
       property="twitter:image"
-      content="https://lloydsibson.github.io/dkelectric/images/dk-share-image.jpg"
+      content="https://www.dk-electrical.com/images/dk-share-image.jpg/images/dk-share-image.jpg"
     />
     <meta
       property="twitter:image:alt"
@@ -98,8 +95,8 @@
     />
 
     <!-- Accessibility & Performance -->
-    <!-- <link rel="preload" href="styles.css" as="style" />
-    <link rel="preload" href="app.js" as="script" /> -->
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="preload" href="app.js" as="script" />
 
     <!-- NAV & HEADER // Critical CSS for above-the-fold content - -->
     <style>
@@ -123,8 +120,6 @@
       sizes="180x180"
       href="favicon/apple-touch-icon.png"
     />
-    <meta name="apple-mobile-web-app-title" content="DKE" />
-    <link rel="manifest" href="site.webmanifest" />
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="site.webmanifest" />
@@ -147,7 +142,7 @@
   </head>
   <body id="top">
     <div class="whatsapp-chat-container">
-      <a href="https://wa.link/pyc2gg">
+      <a href="https://wa.link/pyc2gg" aria-label="Chat with us on WhatsApp">
         <p>Whatsapp Chat Icon</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -192,10 +187,10 @@
         </svg>
       </a>
     </div>
-    <nav class="nav-container">
+    <nav class="nav-container" aria-label="Main navigation">
       <div class="nav-container__inner-container">
         <div class="nav-logo-container">
-          <a href="#top">
+          <a href="#top" aria-label="Back to top">
             DK Electrical Logo
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +264,7 @@
             </div>
           </div>
           <div class="hero-section__image">
-            <img src="images/dk-hero-logo.png" alt="DK Electical Logo" />
+            <img src="images/dk-hero-logo.png" alt="DK Electrical Logo" />
           </div>
         </div>
         <svg
@@ -303,7 +298,7 @@
             <p>
               Power your home with confidence—quick, safe electrical repairs and
               upgrades. Local experts, transparent pricing, reliable service.
-              Call now for a <span>free quote!</span>
+              Call now for a <a href="#contact">free quote!</a>
             </p>
           </article>
           <article class="services-container__service">
@@ -320,12 +315,12 @@
                 fill="#1E1D1A"
               />
             </svg>
-            <h3>Commerical</h3>
+            <h3>Commercial</h3>
             <p>
               Commercial power solutions that keep your business running
               smoothly—installation, maintenance, and upgrades. Reliable,
               efficient, and compliant service. Contact us for a
-              <span>free assessment</span> today!
+              <a href="#contact">free assessment</a> today!
             </p>
           </article>
           <article class="services-container__service">
@@ -346,7 +341,8 @@
             <p>
               Industrial electrical excellence—robust power solutions, custom
               automation, and rigorous safety. We keep your production line
-              humming. Call for a <span>free industrial assessment!</span>
+              humming. Call for a
+              <a href="#contact">free industrial assessment!</a>
             </p>
           </article>
           <article class="services-container__service">
@@ -367,7 +363,8 @@
             <p>
               Get a certified EICR inspection—identify hazards, ensure
               compliance, and keep your premises safe. Quick turnaround,
-              professional advice, and peace of mind. <span>Book today!</span>
+              professional advice, and peace of mind.
+              <a href="#contact">Book today!</a>
             </p>
           </article>
         </div>
@@ -381,11 +378,12 @@
               data-pswp-width="1000"
               data-pswp-height="1000"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 loading="lazy"
                 src="images/gallery-1.jpg"
-                alt="Balcony view"
+                alt="Consumer electrical work completed on modern house in Warwickshire"
               />
             </a>
           </div>
@@ -395,11 +393,12 @@
               data-pswp-width="1000"
               data-pswp-height="1000"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 loading="lazy"
                 src="images/gallery-2.jpg"
-                alt="White house"
+                alt="Outdoor electrical work example in East Midands"
               />
             </a>
             <a
@@ -407,11 +406,12 @@
               data-pswp-width="1000"
               data-pswp-height="1000"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 loading="lazy"
                 src="images/gallery-3.jpg"
-                alt="Modern bathroom"
+                alt="Completed example of consumer electrical work in modern kitchen"
               />
             </a>
 
@@ -420,11 +420,12 @@
               data-pswp-width="1000"
               data-pswp-height="1000"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 loading="lazy"
                 src="images/gallery-4.jpg"
-                alt="Modern dining room"
+                alt="Completed example of modern kitchen in Nuneaton"
               />
             </a>
             <a
@@ -432,11 +433,12 @@
               data-pswp-width="1000"
               data-pswp-height="1000"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 loading="lazy"
                 src="images/gallery-5.jpg"
-                alt="Modern kitchen"
+                alt="Completed example of modern kitchen in the East Midlands"
               />
             </a>
           </div>
@@ -453,6 +455,7 @@
           <div class="reviews-inner-container">
             <article class="reviews-inner-container__review">
               <div class="review-stars">
+                star rating
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="136"
@@ -482,16 +485,17 @@
                   />
                 </svg>
               </div>
-              <h3 class="review">
+              <blockquote class="review">
                 DK Electrical has been our go‑to for commercial maintenance.
                 Their quick response, expert wiring solutions, and transparent
                 pricing keep our shop running safely and efficiently.
-              </h3>
-              <h4 class="review-name">James O’Connor</h4>
+              </blockquote>
+              <h3 class="review-name">James O’Connor</h3>
               <p class="review-city">Birmingham</p>
             </article>
             <article class="reviews-inner-container__review">
               <div class="review-stars">
+                star rating
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="136"
@@ -521,16 +525,17 @@
                   />
                 </svg>
               </div>
-              <h3 class="review">
+              <blockquote class="review">
                 Their team handled our new‑build wiring flawlessly. From initial
                 design to final inspection, they were professional, punctual,
                 and always explained every step—highly recommended.
-              </h3>
-              <h4 class="review-name">Sarah Patel</h4>
+              </blockquote>
+              <h3 class="review-name">Sarah Patel</h3>
               <p class="review-city">Coventry</p>
             </article>
             <article class="reviews-inner-container__review">
               <div class="review-stars">
+                star rating
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="136"
@@ -560,12 +565,12 @@
                   />
                 </svg>
               </div>
-              <h3 class="review">
+              <blockquote class="review">
                 After a power outage, DK Electrical resolved the issue in hours.
                 Their safety focus and thorough EICR report gave us peace of
                 mind, making them our trusted partner.
-              </h3>
-              <h4 class="review-name">Mark Davies</h4>
+              </blockquote>
+              <h3 class="review-name">Mark Davies</h3>
               <p class="review-city">Leicester</p>
             </article>
           </div>
@@ -593,7 +598,7 @@
                     type="text"
                     name="Name"
                     placeholder="YOUR NAME..."
-                    aria-label="YOUR NAME"
+                    aria-label="Your Name"
                     required
                     autocomplete="on"
                   />
@@ -605,7 +610,7 @@
                     type="text"
                     name="Company"
                     placeholder="YOUR COMPANY..."
-                    aria-label="YOUR COMPANY"
+                    aria-label="Your Company"
                     autocomplete="on"
                   />
                 </div>
@@ -628,9 +633,9 @@
                   <input
                     id="formYouAre"
                     type="text"
-                    name="You_Are?"
+                    name="Interested In"
                     placeholder="DOMESTIC, COMMERCIAL, EICR..."
-                    aria-label="You Are?"
+                    aria-label="Interested In"
                     required
                   />
                 </div>
@@ -689,13 +694,7 @@
                 </p>
               </div> -->
                 <p class="form-mandatory-message"><span>*</span> Mandatory</p>
-                <button
-                  class="primary-cta"
-                  type="submit"
-                  class="btn btn-lg btn-dark btn-block"
-                >
-                  Submit
-                </button>
+                <button class="primary-cta" type="submit">Submit</button>
               </div>
             </div>
           </form>
