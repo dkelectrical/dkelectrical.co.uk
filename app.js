@@ -21,6 +21,24 @@ lightbox.init();
 
 // REVIEWS
 
+// SPLIDE CAROUSEL
+new Splide(".splide", {
+  updateOnMove: true,
+  type: "loop",
+  perPage: 3,
+  perMove: 1,
+  autoplay: true,
+  // focus: "center",
+  breakpoints: {
+    992: {
+      perPage: 2,
+    },
+    719: {
+      perPage: 1,
+    },
+  },
+}).mount();
+
 const reviewReadMoreButtons = document.querySelectorAll(".review__read-more");
 
 reviewReadMoreButtons.forEach((readMoreButton) => {

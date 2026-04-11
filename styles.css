@@ -283,6 +283,7 @@ body {
 .services-container__service > p > a {
   color: #e2651d;
   font-weight: 600;
+  text-decoration: unset;
 }
 
 @media (max-width: 1020px) {
@@ -431,17 +432,19 @@ body {
 
 .reviews-container {
   display: flex;
+  width: 100%;
   max-width: 1240px;
   margin: 0 auto;
 }
 
 .reviews-inner-container {
   display: flex;
-  gap: 50px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .reviews-inner-container__review {
-  width: 33%;
+  width: calc(100% - 30px);
   max-height: fit-content;
   padding: 30px;
   border: 3px solid #e2651d;
@@ -483,6 +486,14 @@ body {
   width: 100%;
   height: 150px; /* Height of the fade area */
   background: linear-gradient(to bottom, transparent, #1e1d1a);
+}
+
+.review > p {
+  margin-bottom: 1rem;
+}
+
+.review > p:last-child {
+  margin-bottom: unset;
 }
 
 .review__read-more {
@@ -530,9 +541,6 @@ body {
   .reviews-inner-container {
     padding: 0 16px;
   }
-  .reviews-inner-container {
-    gap: 20px;
-  }
 }
 
 @media (max-width: 1020px) {
@@ -555,12 +563,10 @@ body {
     overflow-x: scroll;
   }
   .reviews-inner-container {
-    gap: 16px;
     -webkit-overflow-scrolling: touch;
   }
   .reviews-inner-container__review {
     display: block;
-    width: 300px;
     padding: 20px;
   }
   .review-stars {
@@ -758,3 +764,60 @@ footer {
 }
 
 /* END FOOTER */
+
+/* SLIDEJS CAROUSEL CSS */
+.splide {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.splide-review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.splide__arrow--prev {
+  left: -50px;
+}
+
+button.splide__arrow--next {
+  right: -50px;
+}
+
+button.splide__arrow {
+  background: #8e8e8e;
+}
+
+ul.splide__pagination {
+  bottom: -50px;
+}
+
+button.splide__pagination__page.is-active {
+  background: #e2651d;
+  transform: unset;
+}
+
+button.splide__pagination__page {
+  background: #8e8e8e;
+  height: 12px;
+  margin: 5px;
+  width: 12px;
+}
+
+@media (max-width: 719px) {
+  .reviews-inner-container__review {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .splide {
+    width: 100%;
+  }
+  .splide__arrows {
+    display: none;
+  }
+}
+
+/* END SLIDEJS CAROUSEL CSS */
