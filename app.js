@@ -18,3 +18,19 @@ const lightbox = new PhotoSwipeLightbox({
 
 lightbox.init();
 // END PHOTOSWIPE GALLERY
+
+// REVIEWS
+
+const reviewReadMoreButtons = document.querySelectorAll(".review__read-more");
+
+reviewReadMoreButtons.forEach((readMoreButton) => {
+  //console.log(readMoreButton);
+  readMoreButton.addEventListener("click", () => {
+    console.log("Button was clicked!");
+    readMoreButton.parentNode
+      .querySelector(".review")
+      .classList.add("read-more");
+  });
+});
+
+// END REVIEWS

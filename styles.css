@@ -441,6 +441,8 @@ body {
 }
 
 .reviews-inner-container__review {
+  width: 33%;
+  max-height: fit-content;
   padding: 30px;
   border: 3px solid #e2651d;
   background:
@@ -448,6 +450,11 @@ body {
     linear-gradient(to right, #fc5c00, #ff9b61) border-box;
   border-radius: 20px;
   border: 3px solid transparent;
+}
+
+.review-container {
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .review-stars {
@@ -458,8 +465,55 @@ body {
 .review {
   font-size: 1.1rem;
   font-weight: 400;
-  margin-bottom: 50px;
   line-height: 28px;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  max-height: 140px;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.review::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* Height of the fade area */
+  background: linear-gradient(to bottom, transparent, #1e1d1a);
+}
+
+.review__read-more {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #1e1d1a;
+  padding: 2.5px 10px;
+  color: #e2651d;
+  font-weight: 500;
+}
+
+.review__read-more:hover {
+  cursor: pointer;
+}
+
+.review.read-more {
+  max-height: unset;
+  line-clamp: unset;
+  -webkit-box-orient: vertical;
+  display: unset;
+  overflow: unset;
+}
+
+.review.read-more:after {
+  content: unset;
+}
+
+.review.read-more + .review__read-more {
+  display: none;
 }
 
 .review-name {
@@ -512,7 +566,7 @@ body {
   .review-stars {
     margin-bottom: 15px;
   }
-  .review {
+  .review-container {
     margin-bottom: 20px;
   }
 }
