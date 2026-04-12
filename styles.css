@@ -414,6 +414,7 @@ body {
 
 .gallery-container__featured {
   border-radius: 10px;
+  max-height: 600px;
 }
 
 .gallery-container__featured,
@@ -450,6 +451,7 @@ body {
 
 .gallery-grid-item {
   width: calc(50% - 10px);
+  max-height: 290px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -485,6 +487,12 @@ body {
   .gallery-container > a,
   .gallery-container > div {
     width: 100%;
+  }
+  .gallery-container__featured {
+    max-height: 350px;
+  }
+  .gallery-grid-item {
+    max-height: 160px;
   }
 }
 
