@@ -19,9 +19,11 @@ const lightbox = new PhotoSwipeLightbox({
 lightbox.init();
 // END PHOTOSWIPE GALLERY
 
-// REVIEWS
-
 // SPLIDE CAROUSEL
+
+// https://splidejs.com/
+// https://splidejs.com/guides/getting-started/
+
 new Splide(".splide", {
   updateOnMove: true,
   type: "loop",
@@ -38,6 +40,10 @@ new Splide(".splide", {
     },
   },
 }).mount();
+
+// END SPLIDE CAROUSEL
+
+// REVIEWS
 
 const reviewReadMoreButtons = document.querySelectorAll(".review__read-more");
 
