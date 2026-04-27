@@ -563,6 +563,7 @@ a#contact-nav-btn {
 
 .services-container__service > svg {
   margin-bottom: 50px;
+  width: 180px;
 }
 
 .services-container__service > h3 {
