@@ -1,26 +1,4 @@
-// PHOTOSWIPE GALLERY
-// https://photoswipe.com/
-// https://github.com/dimsemenov/photoswipe?tab=readme-ov-file
-
-const yearElem = document.getElementById("year");
-yearElem.textContent = new Date().getFullYear();
-
-// 1. Import the Lightbox logic
-import PhotoSwipeLightbox from "./vendor/photoswipe/photoswipe-lightbox.esm.min.js";
-
-// 2. Initialize the gallery
-const lightbox = new PhotoSwipeLightbox({
-  gallery: "#photoswipe-gallery", // The container ID
-  children: "a", // The clickable elements
-  // Dynamically import the UI module when a user clicks an image
-  pswpModule: () => import("./vendor/photoswipe/photoswipe.esm.min.js"),
-});
-
-lightbox.init();
-// END PHOTOSWIPE GALLERY
-
 // SPLIDE CAROUSEL
-
 // https://splidejs.com/
 // https://splidejs.com/guides/getting-started/
 
@@ -30,7 +8,6 @@ new Splide(".splide", {
   perPage: 3,
   perMove: 1,
   autoplay: true,
-  // focus: "center",
   breakpoints: {
     992: {
       perPage: 2,
@@ -41,20 +18,36 @@ new Splide(".splide", {
   },
 }).mount();
 
-// END SPLIDE CAROUSEL
-
 // REVIEWS
 
 const reviewReadMoreButtons = document.querySelectorAll(".review__read-more");
 
 reviewReadMoreButtons.forEach((readMoreButton) => {
-  //console.log(readMoreButton);
   readMoreButton.addEventListener("click", () => {
-    console.log("Button was clicked!");
     readMoreButton.parentNode
       .querySelector(".review")
       .classList.add("read-more");
   });
 });
 
-// END REVIEWS
+// DYNAMIC YEAR
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// REVEAL PHONE NUMBER
+document.addEventListener("DOMContentLoaded", function () {
+  const prefix = "tel:";
+  const part1 = "07928";
+  const part2 = "89";
+  const part3 = "6643";
+  // HERO SECTION
+  const contactButton = document.getElementById("contact-area");
+  contactButton.href = prefix + part1 + part2 + part3.replace(/-/g, "");
+  contactButton.innerText = "Call: " + part1 + " " + part2 + part3;
+  contactButton.classList.add("hero-message-cta-container-contact");
+  // FAQ SECTION
+  document.getElementById("faq-number").innerText = part1 + part2 + part3;
+  // FOOTER NUMBER
+  const footerButton = document.getElementById("footer-number");
+  footerButton.href = prefix + part1 + part2 + part3.replace(/-/g, "");
+  footerButton.innerText = part1 + " " + part2 + part3;
+});

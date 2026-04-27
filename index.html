@@ -15,7 +15,7 @@
     />
     <meta name="author" content="DK Electrical" />
     <meta name="robots" content="index, follow" />
-    <!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> -->
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.dk-electrical.com/" />
@@ -27,16 +27,137 @@
         "@type": "Electrician",
         "name": "DK Electrical",
         "image": "https://www.dk-electrical.com/images/dk-share-image.jpg",
-        "telephone": "+447928896643",
         "url": "https://www.dk-electrical.com/",
+        "priceRange": "££",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nuneaton",
+          "addressRegion": "Warwickshire",
+          "addressCountry": "GB"
+        },
         "areaServed": [
           {
             "@type": "City",
             "name": "Nuneaton"
           },
           {
+            "@type": "City",
+            "name": "Atherstone"
+          },
+          {
+            "@type": "City",
+            "name": "Hinckley"
+          },
+          {
             "@type": "AdministrativeArea",
             "name": "Warwickshire"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "East Midlands"
+          }
+        ],
+        "serviceType": [
+          "Domestic Electrical",
+          "Commercial Electrical",
+          "Industrial Electrical",
+          "EICR Testing",
+          "Electrical Rewiring",
+          "Consumer Unit Installation"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Electrical Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Domestic Electrical Services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Commercial Electrical Services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Industrial Electrical Services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "EICR Testing & Inspection"
+              }
+            }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "7"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What areas do you cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We cover Nuneaton, Atherstone, Hinckley, and all surrounding areas in Warwickshire and the East Midlands."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide free quotes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we provide free, no-obligation quotes for all electrical work. Contact us with your requirements and we will get back to you promptly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you qualified and insured?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, DK Electrical is fully certified and insured. We carry out all work to the latest UK electrical standards and regulations (BS 7671)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can you respond to emergencies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer emergency call-out services. For urgent electrical issues, please call us directly and we will respond as quickly as possible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an EICR and do I need one?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An EICR (Electrical Installation Condition Report) is a formal assessment of the electrical installations in a property. It is recommended for all property owners and is legally required for rentals in England."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer fixed-price quotes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we provide honest, fixed-rate quotes so there are no surprises. The price we quote is the price you pay."
+            }
           }
         ]
       }
@@ -99,10 +220,9 @@
     <link rel="preload" href="app.js" as="script" />
 
     <!-- NAV & HEADER // Critical CSS for above-the-fold content - -->
-    <style>
-      {prettier-ignore}
-      #hero-down-arrow,.nav-container{left:50%;transform:translateX(-50%)}.nav-container{display:flex;position:fixed;top:16px;width:100%;max-width:1440px;z-index:999;padding:0 16px}.nav-container__inner-container{display:flex;width:100%;margin:0 auto;align-items:center;justify-content:space-between;background-color:rgba(0,0,0,.9);border-radius:50px;padding:8px 20px}.nav-logo-container{display:flex;align-items:center;gap:1rem;width:50%}.nav-logo-container>a{font-size:0;display:block}.nav-container-ul__link-container>a,.nav-logo-container>h3,a#contact-nav-btn{font-size:1rem;text-transform:uppercase}.nav-logo-container>a>img{width:65px;height:65px}.nav-logo-container>h3{font-weight:500}.nav-links-container{width:50%}.nav-container-ul{display:flex;align-items:center;margin:unset;justify-content:flex-end}.nav-container-ul>li{margin-right:50px}.nav-container-ul>li:last-child{margin-right:5px}.nav-container-ul__link-container{display:block}.nav-container-ul__link-container>a{text-decoration:unset;font-weight:500}.hero-message-cta-container-contact:hover,.hero-message-cta-container-services:hover,.nav-container-ul__link-container>a:hover{opacity:.5}a#contact-nav-btn{color:#1e1d1a;text-decoration:unset;font-weight:600;border:unset;padding:10px 35px;margin:unset;background-color:#e2651d;border-radius:50px}@media (max-width:880px){.nav-container-ul__link-container>a:not(#contact-nav-btn){display:none}}@media (max-width:470px){.nav-container-ul__link-container>a:not(#contact-nav-btn),.nav-logo-container>h3{display:none}}@media (max-width:330px){a#contact-nav-btn{padding:12px 20px}}.hero-section{height:100vh;position:relative;display:flex;align-items:center;justify-content:space-between}.hero-section__bg{background-image:url("images/hero-image-fusebox.jpg");background-size:cover;background-repeat:no-repeat;width:100%;height:100vh;position:absolute;top:0;left:0;opacity:.1;filter:blur(7px)}.hero-section__inner-container{max-width:1220px;margin:0 auto;gap:50px;display:flex;align-items:center;justify-content:space-between;z-index:99;padding:16px}.hero-message-cta-container-contact,.hero-message-cta-container-services{text-decoration:unset;font-size:1rem;font-weight:600;text-transform:uppercase;padding:10px 35px;margin:unset}.hero-section-message{display:flex;flex-direction:column}.hero-section-message>h1{font-size:3.125rem;font-weight:500;margin-bottom:12px;max-width:650px}.hero-section-message>p{margin-bottom:20px}.hero-message__cta-container{display:flex;gap:15px;align-items:center}.hero-message-cta-container-contact{color:#24231f;background-color:#fff;border-radius:50px}.hero-message-cta-container-services{color:#fff;border:2px solid #fff;background-color:unset;border-radius:50px}.hero-section__image img{width:100%;max-width:500px}#hero-down-arrow{max-width:40px;position:absolute;bottom:50px}@media (max-width:1180px){.nav-container{top:0;padding:unset}.nav-container__inner-container{border-radius:unset;padding:8px 16px}.hero-section__inner-container{flex-direction:column;gap:20px}.hero-section-message{order:2;max-width:490px}.hero-message__cta-container{order:1}.hero-section-message>h1{font-size:2.5rem}.hero-section__image img{max-width:300px}}@media (max-height:800px){.hero-section__image img{display:none}}@media (max-height:900px){#hero-down-arrow{bottom:20px}}@media (max-height:500px){#hero-down-arrow{display:none}}.whatsapp-chat-container{display:flex;justify-content:end;position:fixed;bottom:20px;width:100%;max-width:1590px;z-index:999;padding:0 16px;left:50%;transform:translateX(-50%)}.whatsapp-chat-container:hover{cursor:pointer}.whatsapp-chat-container p{font-size:0}.whatsapp-chat-container svg{height:65px;width:65px}@media (max-width:520px){.hero-message__cta-container{flex-direction:column;width:100%;gap:15px}.hero-section-message>p>br{display:none}.hero-message__cta-container>a{width:100%;display:block;text-align:center;line-height:35px}.whatsapp-chat-container{bottom:5px}.whatsapp-chat-container svg{width:75px;height:75px}}@media (max-width:325px){.hero-section__image img{display:none}.hero-section-message>h1{font-size:2rem}.hero-message__cta-container>a{line-height:25px}#hero-down-arrow{bottom:20px}.whatsapp-chat-container svg{width:65px;height:65px}}
-    </style>
+    <!-- <style>
+      /* {prettier-ignore} */
+    </style> -->
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -137,13 +257,13 @@
 
     <!-- DNS Prefetch -->
     <!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" /> -->
-    <!-- PhotoSwipe - Gallery -->
-    <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css" />
     <!-- SplideJS - Carousel -->
     <link rel="stylesheet" href="vendor/splidejs/splide.min.css" />
     <script src="vendor/splidejs/splide.min.js"></script>
   </head>
   <body id="top">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <div class="whatsapp-chat-container">
       <a href="https://wa.link/pyc2gg" aria-label="Chat with us on WhatsApp">
         <p>Whatsapp Chat Icon</p>
@@ -211,6 +331,9 @@
               <a href="#reviews">Reviews</a>
             </li>
             <li class="nav-container-ul__link-container">
+              <a href="#faq">FAQ</a>
+            </li>
+            <li class="nav-container-ul__link-container">
               <a id="contact-nav-btn" href="#contact">Contact</a>
             </li>
           </ul>
@@ -229,7 +352,13 @@
               quotes.
             </p>
             <div class="hero-message__cta-container">
-              <a href="#contact" class="hero-message-cta-container-contact"
+              <!-- <a href="#contact" class="hero-message-cta-container-contact"
+                >Contact</a
+              > -->
+              <a
+                id="contact-area"
+                href="#contact"
+                class="hero-message-cta-container-contact"
                 >Contact</a
               >
               <a href="#services" class="hero-message-cta-container-services"
@@ -251,6 +380,98 @@
           />
         </svg>
       </section>
+      <!-- <section id="trust-badges">
+        <div class="trust-badges-container">
+          <div class="trust-badge-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#e2651d"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <span>Fully Certified</span>
+          </div>
+          <div class="trust-badge-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#e2651d"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <path d="M14 2v6h6" />
+              <path d="m9 15 2 2 4-4" />
+            </svg>
+            <span>EICR Certified</span>
+          </div>
+          <div class="trust-badge-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#e2651d"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <span>Reliable & Punctual</span>
+          </div>
+          <div class="trust-badge-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#e2651d"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              />
+            </svg>
+            <span>5-Star Rated</span>
+          </div>
+        </div>
+      </section>
+      <section id="stats">
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Customer Satisfaction</span>
+          </div>
+        </div>
+      </section> -->
       <section id="services">
         <h2>Services</h2>
         <div class="services-container">
@@ -346,7 +567,7 @@
       <section id="gallery">
         <h2>Gallery</h2>
         <div class="gallery-container">
-          <a class="gallery-container__featured" href="/domestic.html">
+          <a class="gallery-container__featured" href="domestic.html">
             <h3>Domestic</h3>
             <img
               src="./images/domestic/PHOTO-2026-04-04-13-28-25 6.jpg"
@@ -355,7 +576,7 @@
             <div class="gallery-bg-overlay"></div>
           </a>
           <div class="gallery-container__grid">
-            <a class="gallery-grid-item" href="/bathroom.html">
+            <a class="gallery-grid-item" href="bathroom.html">
               <h3>Bathroom</h3>
               <img
                 src="./images/bathroom/PHOTO-2026-04-04-13-14-26 2.jpg"
@@ -363,7 +584,7 @@
               />
               <div class="gallery-bg-overlay"></div>
             </a>
-            <a class="gallery-grid-item" href="/garden.html">
+            <a class="gallery-grid-item" href="garden.html">
               <h3>Garden</h3>
               <img
                 src="./images/garden/PHOTO-2026-04-04-13-27-43 6.jpg"
@@ -371,7 +592,7 @@
               />
               <div class="gallery-bg-overlay"></div>
             </a>
-            <a class="gallery-grid-item" href="/industrial.html">
+            <a class="gallery-grid-item" href="industrial.html">
               <h3>Industrial</h3>
               <img
                 src="./images/industrial/PHOTO-2026-04-04-13-19-42.jpg"
@@ -379,7 +600,7 @@
               />
               <div class="gallery-bg-overlay"></div>
             </a>
-            <a class="gallery-grid-item" href="/commercial.html">
+            <a class="gallery-grid-item" href="commercial.html">
               <h3>Commercial</h3>
               <img
                 src="./images/commercial/PHOTO-2026-04-04-13-30-18.jpg"
@@ -389,78 +610,6 @@
             </a>
           </div>
         </div>
-        <!-- <div class="pswp-gallery" id="photoswipe-gallery">
-          <div class="pswp-gallery__featured">
-            <a
-              href="images/gallery-1.jpg"
-              data-pswp-width="1000"
-              data-pswp-height="1000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                loading="lazy"
-                src="images/gallery-1.jpg"
-                alt="Consumer electrical work completed on modern house in Warwickshire"
-              />
-            </a>
-          </div>
-          <div class="pswp-gallery__grid">
-            <a
-              href="images/gallery-2.jpg"
-              data-pswp-width="1000"
-              data-pswp-height="1000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                loading="lazy"
-                src="images/gallery-2.jpg"
-                alt="Outdoor electrical work example in East Midands"
-              />
-            </a>
-            <a
-              href="images/gallery-3.jpg"
-              data-pswp-width="1000"
-              data-pswp-height="1000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                loading="lazy"
-                src="images/gallery-3.jpg"
-                alt="Completed example of consumer electrical work in modern kitchen"
-              />
-            </a>
-
-            <a
-              href="images/gallery-4.jpg"
-              data-pswp-width="1000"
-              data-pswp-height="1000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                loading="lazy"
-                src="images/gallery-4.jpg"
-                alt="Completed example of modern kitchen in Nuneaton"
-              />
-            </a>
-            <a
-              href="images/gallery-5.jpg"
-              data-pswp-width="1000"
-              data-pswp-height="1000"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                loading="lazy"
-                src="images/gallery-5.jpg"
-                alt="Completed example of modern kitchen in the East Midlands"
-              />
-            </a>
-          </div>
-        </div> -->
       </section>
       <section id="reviews">
         <h2>Reviews</h2>
@@ -477,14 +626,15 @@
                   <li class="splide__slide">
                     <div class="splide-review-container">
                       <article class="reviews-inner-container__review">
-                        <div class="review-stars">
-                          star rating
+                        <div class="review-stars" aria-label="5 out of 5 stars">
                           <svg
+                            class="review-stars__svg"
                             xmlns="http://www.w3.org/2000/svg"
                             width="136"
                             height="19"
                             viewBox="0 0 136 19"
                             fill="none"
+                            aria-hidden="true"
                           >
                             <path
                               d="M10.7813 0.473551C10.6322 0.18436 10.3305 0 10.0033 0C9.67615 0 9.37442 0.18436 9.22538 0.473551L6.54985 5.68623L0.737108 6.60441C0.413572 6.65502 0.144565 6.88276 0.0427783 7.19364C-0.0590082 7.50452 0.0246022 7.84432 0.253622 8.07568L4.41233 12.2147L3.49625 17.9949C3.44536 18.3167 3.57986 18.642 3.84523 18.8336C4.1106 19.0252 4.45959 19.0541 4.75404 18.9059L10.0033 16.2526L15.249 18.9059C15.5398 19.0541 15.8924 19.0252 16.1578 18.8336C16.4231 18.642 16.5576 18.3203 16.5068 17.9949L15.587 12.2147L19.7457 8.07568C19.9784 7.84432 20.0584 7.50452 19.9566 7.19364C19.8548 6.88276 19.5894 6.65502 19.2623 6.60441L13.4532 5.68623L10.7813 0.473551Z"
@@ -535,14 +685,15 @@
                   <li class="splide__slide">
                     <div class="splide-review-container">
                       <article class="reviews-inner-container__review">
-                        <div class="review-stars">
-                          star rating
+                        <div class="review-stars" aria-label="5 out of 5 stars">
                           <svg
+                            class="review-stars__svg"
                             xmlns="http://www.w3.org/2000/svg"
                             width="136"
                             height="19"
                             viewBox="0 0 136 19"
                             fill="none"
+                            aria-hidden="true"
                           >
                             <path
                               d="M10.7813 0.473551C10.6322 0.18436 10.3305 0 10.0033 0C9.67615 0 9.37442 0.18436 9.22538 0.473551L6.54985 5.68623L0.737108 6.60441C0.413572 6.65502 0.144565 6.88276 0.0427783 7.19364C-0.0590082 7.50452 0.0246022 7.84432 0.253622 8.07568L4.41233 12.2147L3.49625 17.9949C3.44536 18.3167 3.57986 18.642 3.84523 18.8336C4.1106 19.0252 4.45959 19.0541 4.75404 18.9059L10.0033 16.2526L15.249 18.9059C15.5398 19.0541 15.8924 19.0252 16.1578 18.8336C16.4231 18.642 16.5576 18.3203 16.5068 17.9949L15.587 12.2147L19.7457 8.07568C19.9784 7.84432 20.0584 7.50452 19.9566 7.19364C19.8548 6.88276 19.5894 6.65502 19.2623 6.60441L13.4532 5.68623L10.7813 0.473551Z"
@@ -610,14 +761,15 @@
                   <li class="splide__slide">
                     <div class="splide-review-container">
                       <article class="reviews-inner-container__review">
-                        <div class="review-stars">
-                          star rating
+                        <div class="review-stars" aria-label="5 out of 5 stars">
                           <svg
+                            class="review-stars__svg"
                             xmlns="http://www.w3.org/2000/svg"
                             width="136"
                             height="19"
                             viewBox="0 0 136 19"
                             fill="none"
+                            aria-hidden="true"
                           >
                             <path
                               d="M10.7813 0.473551C10.6322 0.18436 10.3305 0 10.0033 0C9.67615 0 9.37442 0.18436 9.22538 0.473551L6.54985 5.68623L0.737108 6.60441C0.413572 6.65502 0.144565 6.88276 0.0427783 7.19364C-0.0590082 7.50452 0.0246022 7.84432 0.253622 8.07568L4.41233 12.2147L3.49625 17.9949C3.44536 18.3167 3.57986 18.642 3.84523 18.8336C4.1106 19.0252 4.45959 19.0541 4.75404 18.9059L10.0033 16.2526L15.249 18.9059C15.5398 19.0541 15.8924 19.0252 16.1578 18.8336C16.4231 18.642 16.5576 18.3203 16.5068 17.9949L15.587 12.2147L19.7457 8.07568C19.9784 7.84432 20.0584 7.50452 19.9566 7.19364C19.8548 6.88276 19.5894 6.65502 19.2623 6.60441L13.4532 5.68623L10.7813 0.473551Z"
@@ -666,14 +818,15 @@
                   <li class="splide__slide">
                     <div class="splide-review-container">
                       <article class="reviews-inner-container__review">
-                        <div class="review-stars">
-                          star rating
+                        <div class="review-stars" aria-label="5 out of 5 stars">
                           <svg
+                            class="review-stars__svg"
                             xmlns="http://www.w3.org/2000/svg"
                             width="136"
                             height="19"
                             viewBox="0 0 136 19"
                             fill="none"
+                            aria-hidden="true"
                           >
                             <path
                               d="M10.7813 0.473551C10.6322 0.18436 10.3305 0 10.0033 0C9.67615 0 9.37442 0.18436 9.22538 0.473551L6.54985 5.68623L0.737108 6.60441C0.413572 6.65502 0.144565 6.88276 0.0427783 7.19364C-0.0590082 7.50452 0.0246022 7.84432 0.253622 8.07568L4.41233 12.2147L3.49625 17.9949C3.44536 18.3167 3.57986 18.642 3.84523 18.8336C4.1106 19.0252 4.45959 19.0541 4.75404 18.9059L10.0033 16.2526L15.249 18.9059C15.5398 19.0541 15.8924 19.0252 16.1578 18.8336C16.4231 18.642 16.5576 18.3203 16.5068 17.9949L15.587 12.2147L19.7457 8.07568C19.9784 7.84432 20.0584 7.50452 19.9566 7.19364C19.8548 6.88276 19.5894 6.65502 19.2623 6.60441L13.4532 5.68623L10.7813 0.473551Z"
@@ -726,14 +879,15 @@
                   <li class="splide__slide">
                     <div class="splide-review-container">
                       <article class="reviews-inner-container__review">
-                        <div class="review-stars">
-                          star rating
+                        <div class="review-stars" aria-label="5 out of 5 stars">
                           <svg
+                            class="review-stars__svg"
                             xmlns="http://www.w3.org/2000/svg"
                             width="136"
                             height="19"
                             viewBox="0 0 136 19"
                             fill="none"
+                            aria-hidden="true"
                           >
                             <path
                               d="M10.7813 0.473551C10.6322 0.18436 10.3305 0 10.0033 0C9.67615 0 9.37442 0.18436 9.22538 0.473551L6.54985 5.68623L0.737108 6.60441C0.413572 6.65502 0.144565 6.88276 0.0427783 7.19364C-0.0590082 7.50452 0.0246022 7.84432 0.253622 8.07568L4.41233 12.2147L3.49625 17.9949C3.44536 18.3167 3.57986 18.642 3.84523 18.8336C4.1106 19.0252 4.45959 19.0541 4.75404 18.9059L10.0033 16.2526L15.249 18.9059C15.5398 19.0541 15.8924 19.0252 16.1578 18.8336C16.4231 18.642 16.5576 18.3203 16.5068 17.9949L15.587 12.2147L19.7457 8.07568C19.9784 7.84432 20.0584 7.50452 19.9566 7.19364C19.8548 6.88276 19.5894 6.65502 19.2623 6.60441L13.4532 5.68623L10.7813 0.473551Z"
@@ -787,14 +941,15 @@
                   <li class="splide__slide">
                     <div class="splide-review-container">
                       <article class="reviews-inner-container__review">
-                        <div class="review-stars">
-                          star rating
+                        <div class="review-stars" aria-label="5 out of 5 stars">
                           <svg
+                            class="review-stars__svg"
                             xmlns="http://www.w3.org/2000/svg"
                             width="136"
                             height="19"
                             viewBox="0 0 136 19"
                             fill="none"
+                            aria-hidden="true"
                           >
                             <path
                               d="M10.7813 0.473551C10.6322 0.18436 10.3305 0 10.0033 0C9.67615 0 9.37442 0.18436 9.22538 0.473551L6.54985 5.68623L0.737108 6.60441C0.413572 6.65502 0.144565 6.88276 0.0427783 7.19364C-0.0590082 7.50452 0.0246022 7.84432 0.253622 8.07568L4.41233 12.2147L3.49625 17.9949C3.44536 18.3167 3.57986 18.642 3.84523 18.8336C4.1106 19.0252 4.45959 19.0541 4.75404 18.9059L10.0033 16.2526L15.249 18.9059C15.5398 19.0541 15.8924 19.0252 16.1578 18.8336C16.4231 18.642 16.5576 18.3203 16.5068 17.9949L15.587 12.2147L19.7457 8.07568C19.9784 7.84432 20.0584 7.50452 19.9566 7.19364C19.8548 6.88276 19.5894 6.65502 19.2623 6.60441L13.4532 5.68623L10.7813 0.473551Z"
@@ -854,6 +1009,59 @@
           </div>
         </div>
       </section>
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <details class="faq-item">
+            <summary>What areas do you cover?</summary>
+            <p>
+              We cover Nuneaton, Atherstone, Hinckley, and all surrounding areas
+              in Warwickshire and the East Midlands.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you provide free quotes?</summary>
+            <p>
+              Yes, we provide free, no-obligation quotes for all electrical
+              work. Contact us with your requirements and we will get back to
+              you promptly.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Are you qualified and insured?</summary>
+            <p>
+              Yes, DK Electrical is fully certified and insured. We carry out
+              all work to the latest UK electrical standards and regulations (BS
+              7671).
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>How quickly can you respond to emergencies?</summary>
+            <p>
+              We offer emergency call-out services. For urgent electrical
+              issues, please call us directly on
+              <span id="faq-number">...</span> and we will respond as quickly as
+              possible.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>What is an EICR and do I need one?</summary>
+            <p>
+              An EICR (Electrical Installation Condition Report) is a formal
+              assessment of the electrical installations in a property. It is
+              recommended for all property owners and is legally required for
+              rentals in England.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer fixed-price quotes?</summary>
+            <p>
+              Yes, we provide honest, fixed-rate quotes so there are no
+              surprises. The price we quote is the price you pay.
+            </p>
+          </details>
+        </div>
+      </section>
       <section id="contact">
         <h2>Contact</h2>
         <p>
@@ -877,7 +1085,7 @@
                     name="Name"
                     placeholder="YOUR NAME..."
                     aria-label="Your Name"
-                    required
+                    required=""
                     autocomplete="on"
                   />
                 </div>
@@ -901,15 +1109,27 @@
                     name="Email"
                     placeholder="YOUR EMAIL..."
                     aria-label="Email Address"
-                    required
+                    required=""
                     autocomplete="on"
                   />
                 </div>
                 <div class="form-input-container">
-                  <label for="formEmail">House / Business Address</label><br />
+                  <label for="formPhoneNumber">Phone Number</label><br />
+                  <input
+                    id="formPhoneNumber"
+                    type="tel"
+                    name="Phone"
+                    placeholder="YOUR PHONE NUMBER..."
+                    aria-label="Phone Number"
+                    autocomplete="on"
+                  />
+                </div>
+                <div class="form-input-container">
+                  <label for="formAddress">House / Business Address</label
+                  ><br />
                   <input
                     id="formAddress"
-                    type="address"
+                    type="text"
                     name="Address"
                     placeholder="YOUR ADDRESS..."
                     aria-label="House or Business Address"
@@ -925,7 +1145,7 @@
                     name="Interested In"
                     placeholder="DOMESTIC, COMMERCIAL, EICR..."
                     aria-label="Interested In"
-                    required
+                    required=""
                   />
                 </div>
 
@@ -965,7 +1185,7 @@
                     rows="5"
                     placeholder="WRITE YOUR MESSAGE HERE..."
                     aria-label="Write Message"
-                    required
+                    required=""
                   ></textarea>
                 </div>
                 <!-- <div class="form-privacy-policy">
@@ -979,7 +1199,7 @@
                 />
                 <p>
                   I understand that DK wEgdblu9Hmsot2j7UtlKbaMvpsNe5KsJHFskvK6Ot79jXcxokQ8WvcxbrLbVfk6EhMQwEIAABCLhGgAcLye & FormSubmit will securely
-                  hold my data in accordance with their privacy policy.
+                  hold my data in accordance with their&nbsp;privacy policy.
                 </p>
               </div> -->
                 <p class="form-mandatory-message"><span>*</span> Mandatory</p>
@@ -992,7 +1212,10 @@
     </main>
     <footer>
       <div class="footer-inner-container">
-        <p>© DK ELECTRICAL <span id="year"></span></p>
+        <p>
+          © DK ELECTRICAL <span id="year">2026</span> | PHONE:
+          <a id="footer-number">...</a>
+        </p>
       </div>
     </footer>
     <script defer type="module" src="app.js"></script>

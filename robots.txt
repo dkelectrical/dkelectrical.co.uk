@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.dk-electrical.com/sitemap.xml
