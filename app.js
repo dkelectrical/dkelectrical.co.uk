@@ -19,14 +19,16 @@ new Splide(".splide", {
 }).mount();
 
 // REVIEWS
-
 const reviewReadMoreButtons = document.querySelectorAll(".review__read-more");
 
 reviewReadMoreButtons.forEach((readMoreButton) => {
   readMoreButton.addEventListener("click", () => {
-    readMoreButton.parentNode
-      .querySelector(".review")
-      .classList.add("read-more");
+    const review = readMoreButton.parentNode.querySelector(".review");
+    const container = readMoreButton.parentNode;
+    const isExpanded = container.getAttribute("aria-expanded") === "true";
+    container.setAttribute("aria-expanded", !isExpanded);
+    review.classList.toggle("read-more");
+    readMoreButton.textContent = isExpanded ? "... See more" : "... See less";
   });
 });
 
