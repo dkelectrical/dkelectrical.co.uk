@@ -54,17 +54,17 @@ document.addEventListener("DOMContentLoaded", function () {
   footerButton.innerText = part1 + " " + part2 + part3;
 });
 
-// HERO HEIGHT
+// HERO FIXED HEIGHT
 // Run this as early as possible (or on DOMContentLoaded)
-const setHeroHeight = () => {
-  const hero = document.querySelector(".hero-section");
-  if (hero) {
-    // Get the actual innerHeight (which is the 'small' viewport initially)
-    const vh = window.innerHeight;
-    hero.style.height = `${vh}px`;
-  }
-};
+// const setHeroHeight = () => {
+//   const hero = document.querySelector(".hero-section");
+//   if (hero) {
+//     // Get the actual innerHeight (which is the 'small' viewport initially)
+//     const vh = window.innerHeight;
+//     hero.style.height = `${vh}px`;
+//   }
+// };
 
-window.addEventListener("load", setHeroHeight);
-// Optional: Only update on orientation change, NOT on scroll
-window.addEventListener("orientationchange", setHeroHeight);
+// window.addEventListener("load", setHeroHeight);
+// // Optional: Only update on orientation change, NOT on scroll
+// window.addEventListener("orientationchange", setHeroHeight);
