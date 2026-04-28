@@ -343,9 +343,9 @@ a#contact-nav-btn {
   }
 }
 .hero-section {
-  min-height: 100vh;
+  /* min-height: 100vh;
   min-height: 100svh;
-  height: auto;
+  height: auto; */
   position: relative;
   display: flex;
   align-items: center;
@@ -356,9 +356,9 @@ a#contact-nav-btn {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
-  min-height: 100svh;
-  height: auto;
+  /* min-height: 100vh;
+  min-height: 100svh; */
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
