@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
       fullNumber;
     contactButton.classList.add("hero-message-cta-container-contact");
     // FAQ SECTION
-    document.getElementById("faq-number").innerText = fullNumber;
+    document.getElementById("faq-number").innerText =
+      "call us on " + fullNumber;
     // FOOTER NUMBER
     const footerButton = document.getElementById("footer-number");
     footerButton.href = prefix + part1 + part2 + part3;
