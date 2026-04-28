@@ -1076,6 +1076,9 @@ a#contact-nav-btn {
   .review-container {
     margin-bottom: 20px;
   }
+  .review-container[aria-expanded="true"] {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 325px) {
