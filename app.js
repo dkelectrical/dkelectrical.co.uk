@@ -73,18 +73,3 @@ document.addEventListener("DOMContentLoaded", function () {
       "</span>";
   }
 });
-
-// HERO FIXED HEIGHT
-//Run this as early as possible (or on DOMContentLoaded)
-const setHeroHeight = () => {
-  const hero = document.querySelector(".hero-section");
-  if (hero) {
-    // Get the actual innerHeight (which is the 'small' viewport initially)
-    const vh = window.innerHeight;
-    hero.style.height = `${vh}px`;
-  }
-};
-
-window.addEventListener("load", setHeroHeight);
-// Optional: Only update on orientation change, NOT on scroll
-window.addEventListener("orientationchange", setHeroHeight);

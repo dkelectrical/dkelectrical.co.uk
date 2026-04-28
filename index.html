@@ -20,6 +20,13 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.dk-electrical.com/" />
 
+    <script>
+      // HERO FIXED HEIGHT
+      // Calculate 1vh and set it as a CSS variable immediately
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    </script>
+
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
       {
@@ -217,12 +224,6 @@
 
     <!-- Accessibility & Performance -->
     <link rel="preload" href="styles.css" as="style" />
-
-    <!-- NAV & HEADER // Critical CSS for above-the-fold content - -->
-    <!-- <style>
-      /* {prettier-ignore} */
-    </style> -->
-
     <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
 
