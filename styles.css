@@ -481,7 +481,7 @@ a#contact-nav-btn {
   }
 }
 .whatsapp-chat-container {
-  display: flex;
+  display: none;
   justify-content: end;
   position: fixed;
   right: 0px;

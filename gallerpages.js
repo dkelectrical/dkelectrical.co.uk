@@ -37,5 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "<span>" +
       fullNumber +
       "</span>";
+    // WHATSAPP CHAT ICON
+    const whatAppChatIcon = document.querySelector(".whatsapp-chat-container");
+    whatAppChatIcon.style.display = "flex";
   }
 });

@@ -35,7 +35,7 @@ reviewReadMoreButtons.forEach((readMoreButton) => {
 // DYNAMIC YEAR
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// REVEAL PHONE NUMBER
+// REVEAL PHONE NUMBER & WHATSAPP ICON BASED ON TIME
 document.addEventListener("DOMContentLoaded", function () {
   const prefix = "tel:";
   const part1 = "07928";
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     10,
   );
 
+  // 9AM - 5PM
   if (ukHour >= 9 && ukHour < 17) {
     // HERO SECTION
     const contactButton = document.getElementById("contact-area");
@@ -72,5 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "<span>" +
       fullNumber +
       "</span>";
+    // WHATSAPP CHAT ICON
+    const whatAppChatIcon = document.querySelector(".whatsapp-chat-container");
+    whatAppChatIcon.style.display = "flex";
   }
 });
