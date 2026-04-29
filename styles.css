@@ -484,10 +484,10 @@ a#contact-nav-btn {
   display: none;
   justify-content: end;
   position: fixed;
-  right: 0px;
-  bottom: 20px;
+  right: 0;
+  bottom: 0px;
   z-index: 999;
-  padding: 0 16px;
+  padding: 8px 8px 12px 8px;
 }
 .whatsapp-chat-container:hover {
   cursor: pointer;
@@ -519,9 +519,6 @@ a#contact-nav-btn {
     display: flex;
     justify-content: center;
     line-height: 35px;
-  }
-  .whatsapp-chat-container {
-    bottom: 5px;
   }
   .whatsapp-chat-container svg {
     width: 75px;
