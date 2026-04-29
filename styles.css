@@ -273,11 +273,13 @@ body {
   width: 50%;
 }
 .nav-logo-container > a {
-  font-size: 0;
-  display: block;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: unset;
 }
 .nav-container-ul__link-container > a,
-.nav-logo-container > h3,
+.nav-logo-container h3,
 a#contact-nav-btn {
   font-size: 1rem;
   text-transform: uppercase;
@@ -286,8 +288,8 @@ a#contact-nav-btn {
   width: 65px;
   height: 65px;
 }
-.nav-logo-container > h3 {
-  font-weight: 500;
+.nav-logo-container h3 {
+  font-weight: 600;
 }
 .nav-links-container {
   width: 50%;
@@ -333,7 +335,7 @@ a#contact-nav-btn {
 }
 @media (max-width: 470px) {
   .nav-container-ul__link-container > a:not(#contact-nav-btn),
-  .nav-logo-container > h3 {
+  .nav-logo-container h3 {
     display: none;
   }
 }

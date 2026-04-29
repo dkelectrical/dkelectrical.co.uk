@@ -102,12 +102,6 @@ main > p {
 
 /* WHATSAPP */
 div.whatsapp-chat-container {
-  bottom: 27px;
-}
-
-@media (max-width: 520px) {
-  div.whatsapp-chat-container {
-    bottom: 12px;
-  }
+  bottom: 7px;
 }
 /* END WHATSAPP */
