@@ -240,6 +240,49 @@ body {
   box-sizing: border-box;
 }
 
+/* SPLASH SCREEN */
+
+.splash-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f1f3;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+}
+
+.splash-screen__inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.splash-icon {
+  width: 100%;
+  max-width: 64px;
+  fill: #000;
+}
+
+.splash-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* END SPLASH SCREEN */
+
 /* NAV + HERO BANNER */
 
 #hero-down-arrow,
