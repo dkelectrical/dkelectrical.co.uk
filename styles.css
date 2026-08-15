@@ -1114,7 +1114,7 @@ a#contact-nav-btn {
   .reviews-container {
     width: 100%;
     overflow-y: hidden;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
   }
   .reviews-inner-container {
     -webkit-overflow-scrolling: touch;
